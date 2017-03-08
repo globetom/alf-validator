@@ -1,0 +1,78 @@
+{
+  "version": "1.1.0",
+  "har": {
+    "log": {
+      "entries": [{
+        "serverIPAddress": "127.0.0.1",
+        "request": {
+          "method": "POST",
+          "url": "https://iwin.co.za/oauth2/token",
+          "headersSize": 245,
+          "headers": [{
+            "name": "host",
+            "value": "iwin.co.za"
+          }, {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded"
+          }, {
+            "name": "accept",
+            "value": "*/*"
+          }, {
+            "name": "x-forwarded-host",
+            "value": "iwin.co.za"
+          }, {
+            "name": "content-length",
+            "value": "119"
+          }, {
+            "name": "user-agent",
+            "value": "curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3"
+          }]
+        },
+        "clientIPAddress": "127.0.0.1",
+        "response": {
+          "statusText": "",
+          "status": 200,
+          "headersSize": 0,
+          "headers": [{
+            "name": "server",
+            "value": "kong/0.9.9"
+          }, {
+            "name": "transfer-encoding",
+            "value": "chunked"
+          }, {
+            "name": "connection",
+            "value": "close"
+          }, {
+            "name": "content-type",
+            "value": "application/json; charset=utf-8"
+          }, {
+            "name": "pragma",
+            "value": "no-cache"
+          }, {
+            "name": "cache-control",
+            "value": "no-store"
+          }]
+        },
+        "startedDateTime": "2017-03-08T08:35:34Z",
+        "time": 0,
+        "timings": {
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "data": {
+          "dataCaptured": true,
+          "data": {
+            "mimeType": "application/json",
+            "encoding": "base64",
+            "text": "eyJldmVudCI6eyJkZXRhaWxzIjp7InJlcXVlc3QiOnsidmFycyI6W3sibmFtZSI6ImdyYW50X3R5cGUiLCJ2YWx1ZSI6ImNsaWVudF9jcmVkZW50aWFscyJ9LHsibmFtZSI6ImNsaWVudF9pZCIsInZhbHVlIjoiOWMyYWNkYTdmZDM3NGNiZTg5ZDM3MDUwY2IyYzFjMWUifSx7Im5hbWUiOiJjbGllbnRfc2VjcmV0IiwidmFsdWUiOiJhNDgzOTA3YWQxYzI0MDc0YWQwNWE2YTNhOGQwZTk2YSJ9XX0sInJlc3BvbnNlIjp7ImJvZHkiOnsiYWNjZXNzX3Rva2VuIjoiZjgwYjRiOTA3NjIwNDVmOWExZWEzZTdiYTRmOGM1OGMiLCJ0b2tlbl90eXBlIjoiYmVhcmVyIn19fSwiZXZlbnRfdHlwZSI6Imlzc3VlX3Rva2VuIn0sImFwaSI6eyJuYW1lIjoiaXdpbiJ9fQ=="
+          }
+        }
+      }],
+      "creator": {
+        "name": "apiman-kong",
+        "version": "0.1.0"
+      }
+    }
+  }
+}
