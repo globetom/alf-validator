@@ -2,10 +2,10 @@
   "name": "alf-validator",
   "description": "Extremely fast API Log Format (ALF) validator using JSON Schema",
   "author": "Ahmad Nassri <ahmad@mashape.com> (https://www.mashape.com/)",
-  "homepage": "https://github.com/Mashape/alf-validator",
+  "homepage": "https://github.com/globetom/alf-validator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mashape/alf-validator.git"
+    "url": "https://github.com/globetom/alf-validator.git"
   },
   "license": "MIT",
   "main": "lib/promise.js",
@@ -29,7 +29,7 @@
     "src"
   ],
   "bugs": {
-    "url": "https://github.com/Mashape/alf-validator/issues"
+    "url": "https://github.com/globetom/alf-validator/issues"
   },
   "scripts": {
     "compile": "babel -q src --out-dir lib",
