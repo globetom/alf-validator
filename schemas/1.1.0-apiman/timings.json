@@ -1,0 +1,30 @@
+{
+  "id": "timings",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "send",
+    "wait",
+    "receive"
+  ],
+  "properties": {
+    "send": {
+      "type": "number",
+      "minimum": 0
+    },
+    "wait": {
+      "type": "number",
+      "minimum": 0
+    },
+    "receive": {
+      "type": "number",
+      "minimum": 0
+    },
+    "blocked": {
+      "type": "number"
+    },
+    "connect": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "content",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "text",
+    "mimeType",
+    "encoding"
+  ],
+  "properties": {
+    "mimeType": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "encoding": {
+      "type": "string",
+      "enum": ["plain", "base64", "unknown"]
+    }
+  }
+}

@@ -1,15 +1,17 @@
 import clone from 'stringify-clone'
-import _content from '../../schemas/1.1.0/content.json'
-import _creator from '../../schemas/1.1.0/creator.json'
-import _entry from '../../schemas/1.1.0/entry.json'
-import _log from '../../schemas/1.1.0/log.json'
-import _pairs from '../../schemas/1.1.0/pairs.json'
-import _request from '../../schemas/1.1.0/request.json'
-import _response from '../../schemas/1.1.0/response.json'
-import _timings from '../../schemas/1.1.0/timings.json'
+import _content from '../../schemas/1.1.0-apiman/content.json'
+import _creator from '../../schemas/1.1.0-apiman/creator.json'
+import _data from '../../schemas/1.1.0-apiman/data.json'
+import _entry from '../../schemas/1.1.0-apiman/entry.json'
+import _log from '../../schemas/1.1.0-apiman/log.json'
+import _pairs from '../../schemas/1.1.0-apiman/pairs.json'
+import _request from '../../schemas/1.1.0-apiman/request.json'
+import _response from '../../schemas/1.1.0-apiman/response.json'
+import _timings from '../../schemas/1.1.0-apiman/timings.json'
 
 let content = clone(_content)
 let creator = clone(_creator)
+let data = clone(_data)
 let entry = clone(_entry)
 let log = clone(_log)
 let pairs = clone(_pairs)
@@ -24,13 +26,14 @@ let timings = clone(_timings)
 
 request.properties.headers.items = pairs
 request.properties.queryString.items = pairs
-request.properties.postData = content
 
 response.properties.headers.items = pairs
-response.properties.content = content
+
+data.properties.data = content
 
 entry.properties.request = request
 entry.properties.response = response
+entry.properties.data = data
 entry.properties.timings = timings
 
 log.properties.har.properties.log.creator = creator

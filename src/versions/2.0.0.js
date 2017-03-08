@@ -20,7 +20,7 @@ let service = clone(_service)
 let timings = clone(_timings)
 
 /*
- * copy external scheams internally
+ * copy external schemas internally
  * is-my-json-valid does not provide meaningful error messages for external schemas
  */
 
